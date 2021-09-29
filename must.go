@@ -16,7 +16,7 @@ type Opts struct {
 }
 
 func MustParse(doc, version string) Opts {
-	opts, err := docopt.ParseArgs(doc, os.Args, version)
+	opts, err := docopt.ParseArgs(doc, os.Args[1:], version)
 	panicErr(err)
 	return Opts{opts}
 }
