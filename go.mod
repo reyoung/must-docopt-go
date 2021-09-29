@@ -1,4 +1,4 @@
-module must-docopt-go
+module github.com/reyoung/must-docopt-go
 
 go 1.11
 
